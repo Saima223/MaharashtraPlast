@@ -1,0 +1,34 @@
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>Leading Plastic Manufacturing Solutions</h1>
+            <p>Innovative, sustainable, and quality plastic products for all your needs</p>
+            <a href="#contact" class="btn">Get a Quote</a>
+        </div>
+        <div class="hero-image">
+            <img src="/api/placeholder/600/400" alt="Plastic Manufacturing">
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="products">
+    <div class="container">
+        <h2 class="section-title">Our Products</h2>
+        <div class="products-grid">
+            <% products.forEach(product => { %>
+                <div class="product-card">
+                    <img src="<%= product.image %>" alt="<%= product.title %>">
+                    <div class="product-info">
+                        <h3><%= product.title %></h3>
+                        <p><%= product.description %></p>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</section>
+
+<%- include('./partials/about') %>
+<%- include('./partials/contact') %>
