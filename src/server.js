@@ -1,8 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const ejs = require('ejs')
+const ejs = require('ejs');
 const path = require('path');
 const expressLayouts = require('express-ejs-layouts');
+
 const app = express();
 
 // Set EJS as templating engine
@@ -13,10 +14,14 @@ app.set('layout', 'layouts/main');
 
 // Serve static files
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Routes
+app.get('/about', (req, res) => {
+    res.render('about');
+});
+
 app.get('/', (req, res) => {
     res.render('index', {
         products: [

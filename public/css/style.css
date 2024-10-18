@@ -124,11 +124,31 @@ body {
 .btn:hover {
     background-color: #1e88e5;
 }
-
+ /* About Section */
+ #about {
+    background: linear-gradient(to right, var(--navy-blue), #1565c0);
+    color: var(--white);
+    padding: 80px 0;
+  }
+  
+  #about ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  #about li:before {
+    content: "•";
+    color: #ffffff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
 /* Products section styles */
 .products {
-    padding: 80px 0;
-    background-color: var(--light-gray);
+    padding: 80px 0;    
+    background: linear-gradient(to right, var(--navy-blue), #1565c0);
+    color: var(--white);
 }
 
 .section-title {
@@ -170,44 +190,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* Footer styles */
-.footer {
-    background-color: var(--navy-blue);
-    color: var(--white);
-    padding: 60px 0 20px;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    margin-bottom: 40px;
-}
-
-.footer-section h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.footer-links {
-    list-style: none;
-}
-
-.footer-links li a {
-    color: var(--light-blue);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-links li a:hover {
-    color: var(--white);
-}
-
-.copyright {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-}
 
 /* Responsive styles */
 @media (max-width: 768px) {
