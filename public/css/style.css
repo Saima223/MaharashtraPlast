@@ -15,6 +15,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #0a1128, #1e3a8a);
     line-height: 1.6;
     color: var(--gray);
     padding-top: 70px; /* Height of fixed navbar */
@@ -28,11 +29,16 @@ body {
 
 /* Navigation styles */
 .navbar {
-    background-color: var(--navy-blue);
+    background: linear-gradient(to right, #1e3a8a, #0a1128); 
     color: var(--white);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 50px;
     position: fixed;
-    top: 0;
-    width: 100%;
+    top: 10px;
+    left: 13px;
+    width: 98%;
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
 }
 
@@ -75,7 +81,7 @@ body {
 
 /* Hero section styles */
 .hero {
-    background: linear-gradient(to right, var(--navy-blue), #1565c0);
+    background: linear-gradient(to right, #0a1128, #1e3a8a); /* Dark blue to navy gradient */
     color: var(--white);
     padding: 80px 0;
 }
@@ -126,7 +132,7 @@ body {
 }
  /* About Section */
  #about {
-    background: linear-gradient(to right, var(--navy-blue), #1565c0);
+    background: linear-gradient(to right, #0a1128, #1e3a8a);
     color: var(--white);
     padding: 80px 0;
   }
@@ -147,7 +153,7 @@ body {
 /* Products section styles */
 .products {
     padding: 80px 0;    
-    background: linear-gradient(to right, var(--navy-blue), #1565c0);
+    background: linear-gradient(to right, #0a1128, #1e3a8a);
     color: var(--white);
 }
 
