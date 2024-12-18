@@ -1,0 +1,158 @@
+/* About Section Styles */
+.about-section {
+    padding: 80px 0;
+    background: linear-gradient(to right, #0a1128, #1e3a8a);
+    color: var(--white);
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--light-blue);
+    margin-top: 0.5rem;
+    font-weight: normal;
+}
+
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lead-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--light-blue);
+}
+
+.feature-icon {
+    background: rgba(100, 181, 246, 0.1);
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.feature:hover .feature-icon {
+    background: rgba(100, 181, 246, 0.2);
+    transform: scale(1.1);
+}
+
+.feature-icon i {
+    font-size: 1.8rem;
+    color: var(--light-blue);
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--white);
+}
+
+.feature-content p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Animations */
+.animate__animated {
+    animation-duration: 1s;
+}
+
+.animate__fadeIn {
+    animation-duration: 1.5s;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .about-features {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .lead-text {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .feature {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .feature-icon {
+        margin-bottom: 1rem;
+    }
+
+    .feature-content {
+        text-align: center;
+    }
+}
