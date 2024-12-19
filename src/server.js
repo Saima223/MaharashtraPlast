@@ -3,8 +3,14 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const path = require('path');
 const expressLayouts = require('express-ejs-layouts');
+const connectDB = require('./config/database');
+const contactRoutes = require('./routes/contact');
+require('dotenv').config();
 
 const app = express();
+
+// Connect to MongoDB
+connectDB();
 
 // Set EJS as templating engine
 app.use(expressLayouts);
@@ -12,12 +18,14 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.set('layout', 'layouts/main');
 
-// Serve static files
+// Middleware
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Routes
+app.use('/contact', contactRoutes);
+
 app.get('/about', (req, res) => {
     res.render('about');
 });
