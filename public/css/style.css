@@ -345,7 +345,39 @@ p {
     background: linear-gradient(to right, #0a1128, #1e3a8a);
     color: var(--white);
 }
+.contact-form-wrapper h3 {
+    color: var(--white);
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+/* Update only the select element styling to match other inputs */
+.contact-form select {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
 
+.contact-form select:focus {
+    outline: none;
+    border-color: var(--light-blue);
+    background: rgba(255, 255, 255, 0.007);
+}
+
+.contact-form select option {
+    background: #152764;
+    color: var(--white);
+    padding: 10px;
+}
+
+/* Style the placeholder option */
+.contact-form select option[value=""] {
+    color: rgba(255, 255, 255, 0.5);
+}
 .contact-wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -500,8 +532,13 @@ p {
     margin-top: 20px;
     position: relative;
 }
+.contact {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
 
-.whatsapp-contact span {
+.contact span {
     display: inline-block;
     padding: 0 15px;
     background: linear-gradient(to right, #0a1128, #1e3a8a);
@@ -510,7 +547,7 @@ p {
     z-index: 1;
 }
 
-.whatsapp-contact::before {
+.contact::before {
     content: '';
     position: absolute;
     top: 50%;
