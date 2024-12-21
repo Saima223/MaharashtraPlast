@@ -2,43 +2,25 @@
 <section id="home" class="hero">
     <div class="container hero-content">
         <div class="hero-text animate__animated animate__fadeInLeft">
-            <h1>Manufacturer & Supplier of PVC and LD Beading for Glass Channels</h1>
+            <h1>PVC and LD Beading Manufacturer for Industrial & Residential Applications</h1>
+            <h2>Premium Glass Channel Solutions</h2>
             <h3>Specialized in Sliding Window Fitting, Table Top Beeding, Tubing & Sleeving Solutions</h3>
-            <p>Innovative, sustainable, and quality plastic products for all your needs</p>
+            <p>Delivering innovative, sustainable, and quality plastic products tailored to your specific requirements. Trusted by leading industries across Maharashtra.</p>
             <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">Get a Quote</a>
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-file-alt"></i> Get a Quote
+                </a>
                 <a href="tel:+919876543210" class="btn btn-outline">
                     <i class="fas fa-phone-alt"></i> Call Now
                 </a>
             </div>
         </div>
         <div class="hero-image animate__animated animate__fadeInRight">
-            <img src="../imgs/pvc1.webp" alt="Plastic Manufacturing" class="img-fluid">
+            <img src="../imgs/pvc1.webp" alt="Premium PVC and LD Beading Manufacturing - Maharashtra Plast" class="img-fluid">
         </div>
     </div>
 </section>
 
-<!-- Products Section -->
-<section id="products" class="products">
-    <div class="container">
-        <h2 class="section-title animate__animated animate__fadeInUp">Our Products</h2>
-        <div class="products-grid">
-            <% products.forEach(product => { %>
-                <div class="product-card animate__animated animate__fadeInUp">
-                    <div class="product-image">
-                        <img src="<%= product.image %>" alt="<%= product.title %>" class="img-fluid">
-                    </div>
-                    <div class="product-info">
-                        <h3><%= product.title %></h3>
-                        <p><%= product.description %></p>
-                        <a href="#contact" class="btn btn-sm">Request Quote</a>
-                    </div>
-                </div>
-            <% }); %>
-        </div>
-    </div>
-</section>
-
-
+<%- include('./partials/products') %>
 <%- include('./partials/about') %>
 <%- include('./partials/contact') %>
