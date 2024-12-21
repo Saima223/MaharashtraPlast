@@ -36,17 +36,17 @@ app.get('/', (req, res) => {
             {
                 title: 'Industrial Containers',
                 description: 'High-quality plastic containers for industrial use',
-                image: '/images/container.jpg'
+                image: '/imgs/pvc-c-channel.webp'
             },
             {
                 title: 'Household Items',
                 description: 'Durable plastic products for everyday use',
-                image: '/images/household.jpg'
+                image: '/imgs/3.jpg'
             },
             {
                 title: 'Custom Solutions',
                 description: 'Tailored plastic products for specific needs',
-                image: '/images/custom.jpg'
+                image: '/imgs/2.jpg'
             }
         ]
     });
