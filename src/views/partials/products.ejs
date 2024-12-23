@@ -9,60 +9,46 @@
     <div class="products-scroll">
         <div class="scroll-content">
             <!-- First Set of Products -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/imgs/2.jpg" alt="Glass Channel Beading">
-                </div>
-                <h3>Glass Channel Beading</h3>
-                <p>Premium quality beading for glass installations</p>
-            </div>
+            <div class="scroll-content">
+                <% products.forEach(product => { %>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="<%= product.image %>" alt="<%= product.title %>">
+                        </div>
+                        <h3><%= product.title %></h3>
+                        <p><%= product.description %></p>
+                    </div>
+                <% }); %>
+                
+                <% products.forEach(product => { %>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="<%= product.image %>" alt="<%= product.title %>">
+                        </div>
+                        <h3><%= product.title %></h3>
+                        <p><%= product.description %></p>
+                    </div>
+                <% }); %>
 
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/imgs/3.jpg" alt="Window Fitting">
-                </div>
-                <h3>Window Fitting</h3>
-                <p>Durable window fitting solutions</p>
-            </div>
+                <% products.forEach(product => { %>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="<%= product.image %>" alt="<%= product.title %>">
+                        </div>
+                        <h3><%= product.title %></h3>
+                        <p><%= product.description %></p>
+                    </div>
+                <% }); %>
 
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/imgs/pvc-c-beading.webp" alt="Table Top Beading">
-                </div>
-                <h3>Table Top Beading</h3>
-                <p>Elegant beading for table tops</p>
-            </div>
-
-            <!-- Duplicate cards for continuous scroll -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/imgs/pvc-rubber.webp" alt="Glass Channel Beading">
-                </div>
-                <h3>Glass Channel Beading</h3>
-                <p>Premium quality beading for glass installations</p>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/imgs/4.jpg" alt="Window Fitting">
-                </div>
-                <h3>Window Fitting</h3>
-                <p>Durable window fitting solutions</p>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/imgs/rubber-channels.webp" alt="Table Top Beading">
-                </div>
-                <h3>Table Top Beading</h3>
-                <p>Elegant beading for table tops</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/imgs/pvc-c-channel.webp" alt="Table Top Beading">
-                </div>
-                <h3>Table Top Beading</h3>
-                <p>Elegant beading for table tops</p>
+                <% products.forEach(product => { %>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="<%= product.image %>" alt="<%= product.title %>">
+                        </div>
+                        <h3><%= product.title %></h3>
+                        <p><%= product.description %></p>
+                    </div>
+                <% }); %>
             </div>
         </div>
     </div>
