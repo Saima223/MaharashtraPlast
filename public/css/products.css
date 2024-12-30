@@ -27,12 +27,12 @@
 
 .products-scroll::before {
     left: 0;
-    background: linear-gradient(to right, #0a1128 0%, transparent 100%);
+    background: linear-gradient(to right, #0a1128 0%, transparent 50%);
 }
 
 .products-scroll::after {
     right: 0;
-    background: linear-gradient(to left, #1e3a8a 0%, transparent 100%);
+    background: linear-gradient(to left, #1e3a8a 0%, transparent 50%);
 }
 .products-section {
     padding: 80px 0;
