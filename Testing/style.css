@@ -1,4 +1,29 @@
-/* Reset and Variables */
+/* Add this to your existing CSS */
+.section-spacing {
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* For smooth transitions */
+.product-card {
+    transition: all 0.3s ease;
+}
+
+/* Responsive container padding */
+@media (max-width: 768px) {
+    .section-spacing {
+        padding: 60px 0;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
 * {
     margin: 0;
     padding: 0;
